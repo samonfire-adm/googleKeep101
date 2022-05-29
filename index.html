@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Keep</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="shortcut icon" href="./logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   </head>
+<body>
+    <nav>
+        <div class="navbar">
+          <div class="logo-nav"><a href="#"><img src="https://www.gstatic.com/images/branding/product/1x/keep_48dp.png" id="nav-logo"></a></div>
+          <ul class="menu-nav">
+            <li><a href="#Home">Home</a></li>
+          </ul>
+        </div>
+      </nav>
+  <div class="main-box">
+    <input type="checkbox" id="check">
+    <div class="btn-one">
+      <label for="check">
+        <i class="fas fa-bars"></i>
+      </label>
+    </div>
+    <div class="sidebar-menu">
+      <div class="logo">
+        <a href="#">Google Keep</a>
+          </div>
+        <div class="btn-two">
+          <label for="check">
+            <i class="fas fa-times"></i>
+          </label>
+        </div>
+      <div class="menu">
+        <ul>
+          <li><i class="fas fa-lightbulb"></i>
+            <a href="#">Notes</a>
+          </li>
+          <li>
+            <i class="fas fa-bell"></i>
+            <a href="#">Reminders</a>
+          </li>
+          <li>
+            <i class="fas fa-pen"></i>
+            <a href="#">Edit Label</a>
+          </li>
+          <li>
+            <i class="fas fa-file-download"></i>
+            <a href="#">Archive</a>
+          </li>
+          <li>
+            <i class="fas fa-trash"></i>
+            <a href="#">Trash</a>
+          </li>
+          <li>
+            <i class="fas fa-question-circle"></i>
+            <a href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="modal">
+    <div class="modal-content">
+      <input class="modal-title" placeholder="Title" type="text">
+      <input class="modal-text" placeholder="Take a note..." type="text">
+      <span class="modal-close-button">Close</span>
+    </div>
+  </div>
+  <main>
+    <header>
+      <!-- <img class="header-logo" src="https://www.gstatic.com/images/branding/product/1x/keep_48dp.png"> -->
+      <h2 class="header-title">Keep</h2>
+    </header>
+    <div id="form-container">
+      <form id="form" autocomplete="off">
+        <input id="note-title" placeholder="Title" type="text">
+        <input id="note-text" placeholder="Take a note..." type="text">
+        <div id="form-buttons">
+          <button type="submit" id="submit-button">Submit</button>
+          <button type="button" id="form-close-button">Close</button>
+        </div>
+      </form>
+    </div>
+    <div id="notes"></div>
+    <div id="placeholder">
+      <img id="placeholder-logo" src="https://i.ibb.co/TPv75mp/lightbulb.png">
+      <p id="placeholder-text">Notes you add appear here</p>
+    </div>
+    <div id="color-tooltip">
+      <div class="color-option" data-color="#fff" id="white"></div>
+      <div class="color-option" data-color="#d7aefb" id="purple"></div>
+      <div class="color-option" data-color="#fbbc04" id="orange"></div>
+      <div class="color-option" data-color="#a7ffeb" id="teal"></div>
+      <div class="color-option" data-color="#3EB489" id="blue"></div>
+      <div class="color-option" data-color="#007FFF" id="azure"></div>
+      <div class="color-option" data-color="#E0115F" id="ruby"></div>
+    </div>
+  </main>
+
+  <script src="./js/app.js"></script>
+  </body>
+
+</html>
